@@ -54,13 +54,13 @@ python scripts/download_weights.py
 To run the tests, install [nose](http://nose.readthedocs.io/en/latest/). After installing, navigate to the [tests/](tests) directory and run:
 
 ```bash
-nosetests -v
+nosetests-2.7 -v
 ```
 
 By default, this will also run finetuning tests. These tests train the model for one epoch and then check the resulting accuracy, which may take several minutes to finish. If you'd prefer to exclude those, run the following instead: 
 
 ```bash
-nosetests -v -a '!slow'
+nosetests-2.7 -v -a '!slow'
 ```
 
 ## Disclaimer 
